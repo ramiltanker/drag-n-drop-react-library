@@ -1,0 +1,41 @@
+@keyframes arrowScale {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.container {
+  position: relative;
+  margin-top: 100px;
+  width: 310px;
+}
+
+.list {
+  height: 300px;
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  background-color: rgba(128, 128, 128, 0.212);
+}
+
+.arrow {
+  display: block;
+  position: absolute;
+  width: 800px;
+  height: 200px;
+  bottom: -250px;
+  animation: arrowScale  2s infinite ease-in-out;
+}
+
+.arrow_hide {
+  display: none;
+}
